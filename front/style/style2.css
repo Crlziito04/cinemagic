@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Protest+Guerrilla&family=Roboto:wght@300&display=swap");
+
+:root {
+  --fondo: url(../Captura\ de\ pantalla\ 2024-01-20\ 131201.png);
+}
+
+body {
+  color: aliceblue;
+  background-color: #141414;
+  height: 100vh;
+}
+header {
+  width: 95vw;
+  margin: auto;
+}
+/* Barra Navegacion */
+nav {
+  width: 100%;
+  height: 68px;
+  padding: 0.5em;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+  transition: 900ms;
+  z-index: 2;
+}
+form {
+  padding: 0.5rem;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-toggler-icon,
+.navbar-toggler {
+  background-color: white;
+}
+.navbar-nav .nav-link,
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link:hover {
+  color: white !important;
+}
+.navbar-toggler .navbar-toggler-icon {
+  color: white !important;
+}
+.navbar-nav li:not(:first-child):hover {
+  opacity: 0.5;
+}
+.navbar-nav li a,
+.navbar-nav li form {
+  margin-left: 0.5rem;
+}
+
+.rounded {
+  padding: 0.2rem;
+  border-radius: 6px;
+  transition: 900ms;
+}
+.rounded:hover {
+  opacity: 0.5;
+  transition: 900ms;
+}
+.btnSearch {
+  background-color: #21273e;
+  transition: 900ms;
+}
+.btnSearch:hover {
+  opacity: 0.7;
+  transition: 900ms;
+}
+/* main */
+main {
+  margin: auto;
+  width: 100vw;
+}
+h1 {
+  color: red;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.list-group .list-group-item,
+.card-body {
+  background-color: #21273e;
+}
+/* #divImg {
+  height: 100vh;
+  width: 100%;
+  background-image: var(--fondo);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
+/* Contenedor de peliculas */
+#container {
+  margin-top: 2rem;
+  padding: 0.5em;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+/* aca */
+.card {
+  width: 18rem;
+  height: 500px;
+}
+.card,
+.card-body,
+.list-group-flush,
+.list-group,
+.list-group-item {
+  background-color: #21273e;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 900ms ease;
+}
+.card-body {
+  padding: 0;
+}
+.card img {
+  height: 200px;
+  min-height: 200px;
+}
+.card-title {
+  margin-top: 10px;
+}
+.card-title a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.list-group-item {
+  text-align: center;
+}
+h6 span {
+  padding: 5px;
+  color: yellow;
+  background-color: red;
+}
+.card-title a:hover {
+  color: yellow;
+}
+/* aca */
+
+/* #divImg {
+  background-color: yellow;
+  background-image: url("../Captura\ de\ pantalla\ 2024-01-20\ 131201.png");
+} */
+/* .card {
+  position: relative;
+  height: 300px;
+  width: 200px;
+}
+.card div {
+  background-color: #21273e;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border: white 2px solid;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardFront {
+  background-color: red;
+  height: 100%;
+}
+.cardFront img {
+  margin: auto;
+  margin-top: 10px;
+  height: 75%;
+  width: 95%;
+  border-radius: 3px;
+}
+.cardFront h3 {
+  margin-top: 0.5em;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.cardBack {
+  padding: 0.5em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.backSpan {
+  align-self: center;
+  font-weight: 800;
+}
+.rate {
+  padding: 0;
+
+  color: yellow;
+}
+.card .cardFront {
+  transform: perspective(500px) rotateY(0deg);
+}
+
+.card .cardBack {
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .cardFront {
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .cardBack {
+  transform: perspective(500px) rotateY(360deg);
+} */
+/* pagina categoria */
+
+.container .movie-cards {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card1 {
+  position: relative;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card1 img {
+  width: 300px;
+  height: 400px;
+
+  transition: all 0.5s;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), #ff0000d7);
+  padding: 40% 4% 0 4%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.card1:hover .content {
+  opacity: 1;
+}
+
+.content h3 {
+  color: yellow;
+  font-size: 20px;
+}
+.content .genre {
+  color: yellow;
+}
+.content .name {
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+}
+
+.content .infos {
+  font-size: 12px;
+  font-weight: 600;
+}
+.content .short-desc {
+  font-size: 14px;
+  line-height: 1.1;
+  padding: 6px 0;
+}
+
+.content .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content .icons button {
+  padding: 10px 10px 100px 10px;
+}
+
+.content .icons a {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 6px;
+}
+
+.content .icons i {
+  transition: all 0.5s;
+}
+.content .icons a:hover i {
+  transform: translateY(-2px);
+}
+.movie-cards .card1:hover img {
+  transform: scale(1.05);
+}
+.content .icons button {
+  background-color: #21273e;
+  transition: 900ms;
+}
+.content .icons:hover button {
+  opacity: 0.7;
+  transition: 900ms;
+}
+.container_img img {
+  margin: auto;
+  width: 100%;
+  height: 60vh;
+}
+/* prueba */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  background: transparent;
+}
+button {
+  font-size: 1rem;
+  color: white;
+}
+/* historia */
+.mainHistoria {
+  margin: auto;
+  width: 80vw;
+}
+.divHistoria {
+  display: flex;
+  flex-direction: column;
+}
+
+.divHistoriaLeft,
+.divHistoriaRight {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 16px;
+}
+/* Pagina formulario */
+
+.formRight {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: solid white 2px;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 2em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.form__title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.form__container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+.form__group {
+  color: white;
+  position: relative;
+}
+.form__label {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+.form__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
+}
+.form__input {
+  width: 100%;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+.select__form {
+  color: #57577e;
+  margin-top: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.inputBtn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__submit {
+  color: white;
+  background: #1b1f30;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+  transition: 900ms;
+}
+
+.form__submit:hover {
+  background-color: #2f71e8ff;
+  transition: 900ms;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #1f7ea7ff;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-nav,
+  form {
+    width: 330px;
+    background-color: #141414;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .divHistoria {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .divHistoriaLeft img,
+  .divHistoriaRight img {
+    height: 250px;
+    width: 80%;
+  }
+}

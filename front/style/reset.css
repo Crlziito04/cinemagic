@@ -1,0 +1,135 @@
+/* Reset CSS */
+
+/* Box-sizing border-box por defecto para todos los elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Elimina los márgenes y rellenos predeterminados */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Asegura consistencia en la visualización de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Ajustes para el encabezado */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Ajustes para las imágenes y objetos multimedia */
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Ajustes para los elementos de formulario */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* Asegura consistencia en la apariencia de los elementos en todos los navegadores */
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Evita la herencia de estilos de fuentes y tamaños en algunos navegadores */
+/* Puedes personalizar estos ajustes según tus preferencias */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* Ajusta el tamaño de la fuente para el elemento "pre" */
+pre {
+  font-size: 1em;
+}
+
+/* Elimina el espacio adicional en los elementos "blockquote" */
+blockquote {
+  margin: 0;
+}
+
+/* Elimina el estilo de contorno en algunos navegadores al enfocar elementos */
+button,
+input,
+select,
+textarea {
+  outline: none;
+}
+
+/* Asegura que los elementos "a" tengan un color de texto consistente */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Asegura que los elementos "abbr" tengan un borde inferior en algunos navegadores */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* Ajustes opcionales para mejorar la legibilidad del texto */
+body {
+  line-height: 1.5;
+}
+
+/* Restablece la apariencia predeterminada del cursor */
+button,
+input,
+select,
+textarea {
+  cursor: pointer;
+}
+
+/* Restablece la apariencia predeterminada de los elementos */
+button,
+input {
+  overflow: visible;
+}
+
+/* Restablece las propiedades específicas de algunos elementos */
+button,
+select {
+  text-transform: none;
+}
